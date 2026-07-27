@@ -7,20 +7,6 @@ const base = import.meta.env.BASE_URL
 const projects = [
   {
     id: 1,
-    name: 'Glyph',
-    tagline: 'iPad note-taking with Apple Pencil handwriting synthesis, agent chat, flashcards, and study-group matching \u2014 close to v1.',
-    details: [
-      'Building since January 2026 with a team of two technical founders (7+ combined publications; shipped iOS apps and open-source tools)',
-      'Working iPad note-taking app: Apple Pencil canvas, notebooks, and an agent chat interface',
-      'Handwriting-synthesis engine that renders text as strokes in the user\u2019s own hand \u2014 first tried a 6.5M-parameter LSTM+MDN on 11,739 IAM-OnDB writers, then pivoted to a template-glyph engine that reaches product quality',
-      'Flashcard generator and vector database for note-based study-group matching \u2014 both nearly done',
-      'Now finishing 26-letter handwriting capture and wiring the full circle-to-answer loop; once those land, v1 is demoable end-to-end',
-    ],
-    gradient: 'linear-gradient(135deg, #0f0c29, #302b63, #24243e)',
-    emoji: '\u270D\uFE0F',
-  },
-  {
-    id: 2,
     name: 'StrokeSentry',
     tagline: 'A lightweight, private, real-time mobile app for early stroke detection using the FAST method.',
     details: [
@@ -33,7 +19,7 @@ const projects = [
     emoji: '\uD83D\uDE80',
   },
   {
-    id: 3,
+    id: 2,
     name: 'EEG Cognitive Energy Modeling',
     tagline: 'Quantifying neural metabolic cost from EEG transitions using the Schr\u00F6dinger Bridge Problem and generative adversarial networks.',
     details: [
@@ -46,7 +32,7 @@ const projects = [
     emoji: '\uD83E\uDDE0',
   },
   {
-    id: 4,
+    id: 3,
     name: 'Hybrid Windkessel-Neural BP Monitor',
     tagline: 'Improved hybrid neural ODE model for noninvasive blood pressure estimation.',
     details: [
@@ -58,7 +44,7 @@ const projects = [
     emoji: '\uD83D\uDCF1',
   },
   {
-    id: 5,
+    id: 4,
     name: 'TinyML IoMT Detection System',
     tagline: 'Federated anomaly detection system for Internet of Medical Things devices.',
     details: [
@@ -71,7 +57,7 @@ const projects = [
     emoji: '\uD83C\uDF10',
   },
   {
-    id: 6,
+    id: 5,
     name: 'Finance and Investments Club Platform',
     tagline: 'Digital infrastructure for a 6,000-member, 122-chapter nonprofit spreading financial literacy.',
     details: [
@@ -159,20 +145,18 @@ export default function Projects({ isOpen, onClose }) {
                               <p style={{ fontSize: '13px', color: '#555', lineHeight: 1.5 }}>{detail}</p>
                             </div>
                           ))}
-                          {project.button && (
-                            <a
-                              href={project.button.url}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              style={{
-                                display: 'inline-block', marginTop: '8px',
-                                background: '#007AFF', color: 'white', fontSize: '13px', fontWeight: 600,
-                                padding: '8px 20px', borderRadius: '20px', textDecoration: 'none',
-                              }}
-                            >
-                              {project.button.label}
-                            </a>
-                          )}
+                          <a
+                            href={project.button.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{
+                              display: 'inline-block', marginTop: '8px',
+                              background: '#007AFF', color: 'white', fontSize: '13px', fontWeight: 600,
+                              padding: '8px 20px', borderRadius: '20px', textDecoration: 'none',
+                            }}
+                          >
+                            {project.button.label}
+                          </a>
                         </div>
                       </div>
                     </motion.div>
