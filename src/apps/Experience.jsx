@@ -4,6 +4,20 @@ import AppWindow from '../components/AppWindow'
 const experiences = [
   {
     id: 1,
+    role: 'Co-Founder',
+    company: 'Glyph',
+    type: 'Startup · Jan 2026 \u2013 Present',
+    logoGradient: 'linear-gradient(135deg, #0f0c29, #302b63)',
+    details: [
+      'Building Glyph with a team of two technical founders (7+ combined publications; shipped iOS apps and open-source tools), alongside school.',
+      'Shipped a working iPad note-taking app with Apple Pencil canvas, notebooks, and an agent chat interface.',
+      'Built the handwriting-synthesis engine that renders text as strokes in the user\u2019s own hand: trained a 6.5M-parameter LSTM+MDN on 11,739 IAM-OnDB writers, then pivoted to a template-glyph engine that reaches product quality.',
+      'Flashcard generator and vector database for note-based study-group matching \u2014 both nearly done.',
+      'Finishing 26-letter handwriting capture and the full circle-to-answer loop; once those land, v1 is demoable end-to-end.',
+    ],
+  },
+  {
+    id: 2,
     role: 'Research Fellow',
     company: 'UNT Mixed Realities (MXR) Lab',
     type: 'Research · 12 hrs/week',
@@ -18,7 +32,7 @@ const experiences = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     role: 'Software Engineering Intern',
     company: 'CORE (YC S23)',
     type: 'Internship',
@@ -32,7 +46,7 @@ const experiences = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     role: 'Research Assistant',
     company: 'UNT Smart Electronic Systems Lab (SESL)',
     type: 'Research · 7 hrs/week',
@@ -46,7 +60,7 @@ const experiences = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     role: 'Game Development Intern',
     company: 'Solaria Interactive',
     type: 'Internship',
@@ -60,7 +74,7 @@ const experiences = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     role: 'Lead Tutor/Manager',
     company: 'Kumon of Coppell East',
     type: 'Part-time · 6 hrs/week',

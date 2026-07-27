@@ -5,15 +5,21 @@ import AppWindow from '../components/AppWindow'
 const notes = [
   {
     id: 1,
-    title: 'About Me',
-    content: "I am a student researcher at the Texas Academy of Mathematics and Science collaborating with research labs at the University of North Texas. My work focuses on machine learning systems, edge AI, and computational modeling of physiological signals, with applications in healthcare and real-world sensing systems.\n\nI am particularly interested in building intelligent systems that operate at the intersection of artificial intelligence, hardware, and applied mathematics. My projects range from deploying TinyML models on embedded devices to developing machine learning pipelines for biomedical data and computer vision.\n\nBeyond research, I enjoy exploring software engineering, quantitative systems, and product development. I am driven by curiosity and enjoy working on interdisciplinary problems that combine technology, science, and real-world impact.",
+    title: 'How far along are you?',
+    content: "We're a team of two technical founders with 7+ combined publications who've shipped iOS apps and open-source tools. We've been building Glyph since January 2026, alongside school.\n\nWe're close to our first full version (v1). Built so far:\n\n• A working iPad note-taking app: Apple Pencil canvas, notebooks, and an agent chat interface.\n\n• The hard part — a handwriting-synthesis engine that renders text as strokes in the user's own hand. We first trained a 6.5M-parameter LSTM+MDN model on 11,739 writers from IAM-OnDB, judged it couldn't reach product quality, and pivoted to a template-glyph engine that works.\n\n• A flashcard generator and the vector database that powers note-based study-group matching — both nearly done.\n\nWe're now finishing the 26-letter handwriting capture and wiring the full circle-to-answer loop. Once those land, v1 is demoable end-to-end.",
     pinned: true
   },
   {
     id: 2,
+    title: 'About Me',
+    content: "I am a student researcher at the Texas Academy of Mathematics and Science collaborating with research labs at the University of North Texas. My work focuses on machine learning systems, edge AI, and computational modeling of physiological signals, with applications in healthcare and real-world sensing systems.\n\nI am particularly interested in building intelligent systems that operate at the intersection of artificial intelligence, hardware, and applied mathematics. My projects range from deploying TinyML models on embedded devices to developing machine learning pipelines for biomedical data and computer vision.\n\nBeyond research, I enjoy exploring software engineering, quantitative systems, and product development. I am driven by curiosity and enjoy working on interdisciplinary problems that combine technology, science, and real-world impact. Right now I'm also co-founding Glyph — an iPad note-taking product with handwriting synthesis and study tools.",
+    pinned: true
+  },
+  {
+    id: 5,
     title: 'Career Goals',
     content: "My long term goal is to explore the intersection of technology, mathematics, and real world systems. I want to work across multiple domains including software engineering, quantitative research, product development, finance, and startups to understand how complex systems are built and scaled.\n\nI am particularly interested in exploring careers in software engineering, quantitative finance, investment banking, and the business side of technology. I enjoy both the technical process of building systems and the strategic side of turning ideas into impactful products or companies.\n\nAs I continue developing my skills in artificial intelligence, machine learning, and computational systems, I also want to explore areas such as electrical engineering and hardware systems. Understanding how software, hardware, and business strategy interact will allow me to build technologies that have meaningful real world impact.",
-    pinned: true
+    pinned: false
   },
   {
     id: 3,
