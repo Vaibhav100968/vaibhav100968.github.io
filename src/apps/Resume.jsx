@@ -2,6 +2,8 @@ import AppWindow from '../components/AppWindow'
 
 export default function Resume({ isOpen, onClose }) {
   const base = import.meta.env.BASE_URL
+  // Cache-bust so browser/iframe picks up resume PDF updates
+  const resumePdf = `${base}pdfs/resume.pdf?v=2026`
 
   return (
     <AppWindow isOpen={isOpen} onClose={onClose} title="Resume" headerColor="#FFF7F0">
@@ -17,7 +19,7 @@ export default function Resume({ isOpen, onClose }) {
             </h2>
             <p style={{ fontSize: '13px', color: '#666', marginBottom: '16px' }}>Resume</p>
             <a
-              href={`${base}pdfs/resume.pdf`}
+              href={resumePdf}
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -35,7 +37,7 @@ export default function Resume({ isOpen, onClose }) {
             boxShadow: '0 1px 8px rgba(0,0,0,0.06)', width: '100%',
           }}>
             <iframe
-              src={`${base}pdfs/resume.pdf`}
+              src={resumePdf}
               title="Resume"
               style={{ width: '100%', height: '500px', border: 'none' }}
             />
