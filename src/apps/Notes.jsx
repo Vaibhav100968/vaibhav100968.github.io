@@ -81,7 +81,7 @@ export default function Notes({ isOpen, onClose }) {
 
   return (
     <AppWindow isOpen={isOpen} onClose={onClose} title="Notes" headerColor="#FFF3E8">
-      <div style={{ background: '#FFF3E8', minHeight: '100%', paddingBottom: '80px' }}>
+      <div style={{ background: '#FFF3E8', minHeight: '100%', paddingBottom: '28px' }}>
         <AnimatePresence mode="wait">
           {!selectedNote ? (
             <motion.div

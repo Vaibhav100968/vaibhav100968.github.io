@@ -29,7 +29,7 @@ const dockApps = [
 export default function Dock({ onAppOpen }) {
   return (
     <motion.div
-      className="absolute bottom-5 left-5 right-5 dock-blur rounded-[28px] px-5 py-3.5 flex justify-around items-center z-30"
+      className="absolute bottom-6 left-5 right-5 dock-blur rounded-[28px] px-5 py-3.5 flex justify-around items-center z-30"
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ delay: 0.3, type: 'spring', stiffness: 200, damping: 25 }}
@@ -61,9 +61,6 @@ export default function Dock({ onAppOpen }) {
           </Tag>
         )
       })}
-
-      {/* Home bar */}
-      <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-[140px] h-[5px] bg-white/40 rounded-full" />
     </motion.div>
   )
 }

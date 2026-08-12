@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --phone-width: 375px;
-  --phone-height: 812px;
+  --phone-width: 414px;
+  --phone-height: 896px;
 }
 
 * {

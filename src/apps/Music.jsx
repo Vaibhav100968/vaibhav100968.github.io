@@ -39,7 +39,7 @@ export default function Music({ isOpen, onClose }) {
 
   return (
     <AppWindow isOpen={isOpen} onClose={onClose} title="Music" headerColor="#121212">
-      <div style={{ background: '#121212', minHeight: '100%', paddingBottom: '100px' }}>
+      <div style={{ background: '#121212', minHeight: '100%', paddingBottom: '28px' }}>
         {/* Tabs */}
         <div style={{ display: 'flex', gap: '8px', padding: '8px 16px 12px' }}>
           {tabs.map(tab => (

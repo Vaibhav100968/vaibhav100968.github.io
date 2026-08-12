@@ -3,7 +3,7 @@ import AppWindow from '../components/AppWindow'
 export default function Spotify({ isOpen, onClose }) {
   return (
     <AppWindow isOpen={isOpen} onClose={onClose} title="Spotify" headerColor="#121212">
-      <div className="bg-[#121212] min-h-full pb-20 flex flex-col items-center">
+      <div className="bg-[#121212] min-h-full pb-8 flex flex-col items-center">
         <div className="px-4 pt-2 pb-4 w-full">
           <h2 className="text-white text-2xl font-bold">My Music</h2>
           <p className="text-[#B3B3B3] text-sm mt-1">What I listen to</p>

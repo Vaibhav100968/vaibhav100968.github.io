@@ -119,7 +119,7 @@ function PubCard({ pub, idx }) {
 export default function Awards({ isOpen, onClose }) {
   return (
     <AppWindow isOpen={isOpen} onClose={onClose} title="Awards" headerColor="#FFF7F0">
-      <div style={{ background: '#FFF7F0', minHeight: '100%', paddingBottom: '80px' }}>
+      <div style={{ background: '#FFF7F0', minHeight: '100%', paddingBottom: '28px' }}>
         <div style={{ padding: '8px 16px 4px' }}>
           <h2 style={{ fontSize: '22px', fontWeight: 700, color: '#1a1a1a' }}>Awards</h2>
         </div>

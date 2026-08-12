@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 
-const PHONE_W = 375
-const PHONE_H = 812
+const PHONE_W = 414
+const PHONE_H = 896
 
 export default function PhoneFrame({ children }) {
   const [scale, setScale] = useState(1)
@@ -18,11 +18,11 @@ export default function PhoneFrame({ children }) {
         setScale(1)
       } else {
         setIsMobile(false)
-        const padY = 24
-        const padX = 80
+        const padY = 20
+        const padX = 64
         const scaleH = (vh - padY) / PHONE_H
         const scaleW = (vw - padX) / PHONE_W
-        setScale(Math.min(0.85, scaleH, scaleW))
+        setScale(Math.min(0.9, scaleH, scaleW))
       }
     }
     update()
@@ -92,7 +92,7 @@ export default function PhoneFrame({ children }) {
           style={{
             width: `${PHONE_W}px`,
             height: `${PHONE_H}px`,
-            borderRadius: '50px',
+            borderRadius: '54px',
             boxShadow: '0 0 0 3px #1a1a1a, 0 0 0 6px #0a0a0a, 0 30px 80px rgba(0,0,0,0.5)',
             transform: `scale(${scale})`,
             transformOrigin: 'top left',

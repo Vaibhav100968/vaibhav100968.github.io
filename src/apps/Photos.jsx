@@ -31,7 +31,7 @@ export default function Photos({ isOpen, onClose }) {
 
   return (
     <AppWindow isOpen={isOpen} onClose={onClose} title="Photos" headerColor="#FFF7F0">
-      <div style={{ background: '#FFF7F0', minHeight: '100%', paddingBottom: '80px' }}>
+      <div style={{ background: '#FFF7F0', minHeight: '100%', paddingBottom: '28px' }}>
         <div style={{ padding: '8px 16px 12px' }}>
           <h2 style={{ fontSize: '22px', fontWeight: 700, color: '#1a1a1a' }}>Library</h2>
           <p style={{ fontSize: '13px', color: '#888', marginTop: '2px' }}>{photos.length} Photos</p>

@@ -66,7 +66,7 @@ export default function LockScreen({ onUnlock }) {
           </div>
 
           {/* Bottom */}
-          <div className="pb-8 flex flex-col items-center gap-6">
+          <div className="pb-10 flex flex-col items-center gap-6">
             <motion.p
               className="text-white/40 text-sm font-light"
               animate={{ opacity: [0.3, 0.6, 0.3] }}
@@ -74,9 +74,6 @@ export default function LockScreen({ onUnlock }) {
             >
               Click the screen to unlock
             </motion.p>
-
-            {/* Home bar */}
-            <div className="w-[140px] h-[5px] bg-white/40 rounded-full" />
           </div>
         </motion.div>
       )}

@@ -65,8 +65,8 @@ export default function HomeScreen({ onAppOpen }) {
       <StatusBar />
 
       {/* App Grid */}
-      <div className="flex-1" style={{ paddingTop: '78px', paddingLeft: '20px', paddingRight: '20px', paddingBottom: '120px' }}>
-        <div className="grid grid-cols-4 place-items-center" style={{ rowGap: '26px' }}>
+      <div className="flex-1" style={{ paddingTop: '82px', paddingLeft: '24px', paddingRight: '24px', paddingBottom: '130px' }}>
+        <div className="grid grid-cols-4 place-items-center" style={{ rowGap: '28px' }}>
           {appConfigs.map((app, index) => (
             <AppIcon
               key={app.id}

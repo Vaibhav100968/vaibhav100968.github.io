@@ -7,7 +7,7 @@ export default function Resume({ isOpen, onClose }) {
 
   return (
     <AppWindow isOpen={isOpen} onClose={onClose} title="Resume" headerColor="#FFF7F0">
-      <div style={{ background: '#FFF7F0', minHeight: '100%', paddingBottom: '80px' }}>
+      <div style={{ background: '#FFF7F0', minHeight: '100%', paddingBottom: '28px' }}>
         <div style={{ padding: '16px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px' }}>
           <div style={{
             background: 'white', borderRadius: '16px', padding: '24px',

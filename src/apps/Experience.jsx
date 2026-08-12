@@ -77,7 +77,7 @@ const experiences = [
 export default function Experience({ isOpen, onClose }) {
   return (
     <AppWindow isOpen={isOpen} onClose={onClose} title="Experience" headerColor="#FFF7F0">
-      <div style={{ background: '#FFF7F0', minHeight: '100%', paddingBottom: '80px' }}>
+      <div style={{ background: '#FFF7F0', minHeight: '100%', paddingBottom: '28px' }}>
         <div style={{ padding: '8px 16px 16px' }}>
           <h2 style={{ fontSize: '22px', fontWeight: 700, color: '#1a1a1a' }}>Work Experience</h2>
         </div>

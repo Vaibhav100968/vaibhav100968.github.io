@@ -31,7 +31,7 @@ const sections = [
 export default function Contacts({ isOpen, onClose }) {
   return (
     <AppWindow isOpen={isOpen} onClose={onClose} title="Contacts" headerColor="#FDF6F0">
-      <div style={{ background: '#FDF6F0', minHeight: '100%', paddingBottom: '80px' }}>
+      <div style={{ background: '#FDF6F0', minHeight: '100%', paddingBottom: '28px' }}>
         {/* Profile header */}
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '20px 16px 16px' }}>
           <div style={{

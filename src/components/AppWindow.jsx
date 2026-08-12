@@ -2,7 +2,6 @@ import { motion, AnimatePresence } from 'framer-motion'
 
 function isLightColor(color) {
   if (!color) return false
-  // Check for known light colors
   if (color.startsWith('#FFF') || color.startsWith('#FDF') || color.startsWith('#fff') || color.startsWith('#fdf')) return true
   return false
 }
@@ -10,7 +9,10 @@ function isLightColor(color) {
 export default function AppWindow({ isOpen, onClose, title, children, headerColor = 'rgba(0,0,0,0.85)' }) {
   const light = isLightColor(headerColor)
   const textColor = light ? '#1a1a1a' : 'white'
-  const barColor = light ? 'rgba(0,0,0,0.15)' : 'rgba(255,255,255,0.4)'
+  const footerBg = light ? headerColor : headerColor
+  const buttonRing = light ? 'rgba(0,0,0,0.22)' : 'rgba(255,255,255,0.45)'
+  const buttonFill = light ? 'rgba(0,0,0,0.06)' : 'rgba(255,255,255,0.1)'
+  const buttonInner = light ? 'rgba(0,0,0,0.12)' : 'rgba(255,255,255,0.2)'
 
   return (
     <AnimatePresence>
@@ -41,18 +43,46 @@ export default function AppWindow({ isOpen, onClose, title, children, headerColo
             {children}
           </div>
 
-          {/* Bottom home bar - clickable to go home */}
-          <motion.button
-            className="absolute bottom-0 left-0 right-0 flex items-end justify-center pb-2 z-10"
-            style={{ height: '26px' }}
-            onClick={onClose}
-            whileTap={{ scale: 0.95 }}
+          {/* Classic home button — closes app */}
+          <div
+            className="shrink-0 flex items-center justify-center"
+            style={{
+              height: '64px',
+              background: footerBg,
+              paddingBottom: '8px',
+            }}
           >
-            <div style={{
-              width: '120px', height: '4px', borderRadius: '9999px',
-              background: barColor,
-            }} />
-          </motion.button>
+            <motion.button
+              type="button"
+              aria-label="Home"
+              onClick={onClose}
+              whileHover={{ scale: 1.04 }}
+              whileTap={{ scale: 0.92 }}
+              style={{
+                width: '48px',
+                height: '48px',
+                borderRadius: '50%',
+                background: buttonFill,
+                border: `2.5px solid ${buttonRing}`,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                boxShadow: light
+                  ? 'inset 0 1px 2px rgba(255,255,255,0.5), 0 1px 3px rgba(0,0,0,0.12)'
+                  : 'inset 0 1px 2px rgba(255,255,255,0.15), 0 1px 4px rgba(0,0,0,0.35)',
+                cursor: 'pointer',
+              }}
+            >
+              <div
+                style={{
+                  width: '16px',
+                  height: '16px',
+                  borderRadius: '4px',
+                  border: `2px solid ${buttonInner}`,
+                }}
+              />
+            </motion.button>
+          </div>
         </motion.div>
       )}
     </AnimatePresence>
