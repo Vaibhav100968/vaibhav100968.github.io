@@ -8,14 +8,14 @@ const sections = [
     items: [
       { emoji: '\uD83D\uDCE7', label: 'Email', value: 'vaibhavgollapalli5@gmail.com', url: 'mailto:vaibhavgollapalli5@gmail.com' },
       { emoji: '\uD83C\uDFE0', label: 'Home', value: 'Coppell, TX' },
-      { emoji: '\uD83C\uDF82', label: 'Birthday', value: 'August 1, 200X' },
+      { emoji: '\uD83C\uDF82', label: 'Birthday', value: 'August 1, 2008' },
     ],
   },
   {
     title: 'Education',
     items: [
       { emoji: '\uD83C\uDF93', label: 'Major', value: 'Computer Science' },
-      { emoji: '\uD83C\uDFEB', label: 'School', value: 'Texas Academy of Mathematics and Science' },
+      { emoji: '\uD83C\uDFEB', label: 'School', value: 'Texas A&M University' },
     ],
   },
   {
