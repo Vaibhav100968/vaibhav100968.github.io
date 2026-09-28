@@ -50,7 +50,8 @@ export default function PhoneFrame({ children }) {
           style={{
             fontSize: 'clamp(40px, 6vw, 90px)',
             fontWeight: 600,
-            color: 'rgba(255, 255, 255, 0.06)',
+            color: 'rgba(255, 255, 255, 0.9)',
+            textShadow: '0 0 24px rgba(255, 255, 255, 0.35), 0 0 60px rgba(255, 255, 255, 0.15)',
             letterSpacing: '-0.03em',
             lineHeight: 1,
             whiteSpace: 'nowrap',
@@ -70,7 +71,8 @@ export default function PhoneFrame({ children }) {
           style={{
             fontSize: 'clamp(40px, 6vw, 90px)',
             fontWeight: 600,
-            color: 'rgba(255, 255, 255, 0.06)',
+            color: 'rgba(255, 255, 255, 0.9)',
+            textShadow: '0 0 24px rgba(255, 255, 255, 0.35), 0 0 60px rgba(255, 255, 255, 0.15)',
             letterSpacing: '-0.03em',
             lineHeight: 1,
             whiteSpace: 'nowrap',
