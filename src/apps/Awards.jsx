@@ -76,6 +76,8 @@ const achievements = [
     category: 'Entrepreneurship',
     items: [
       'Ultra Venture Fellowship \u2014 Top 1 Percentile',
+      'YC Startup School 2026',
+      'Alta Capital Fall 2026 Cohort',
     ],
   },
 ]
