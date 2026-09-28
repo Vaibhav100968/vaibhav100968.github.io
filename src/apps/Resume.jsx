@@ -3,7 +3,7 @@ import AppWindow from '../components/AppWindow'
 export default function Resume({ isOpen, onClose }) {
   const base = import.meta.env.BASE_URL
   // Cache-bust so browser/iframe picks up resume PDF updates
-  const resumePdf = `${base}pdfs/resume.pdf?v=2026`
+  const resumePdf = `${base}pdfs/resume.pdf?v=2026-09-28`
 
   return (
     <AppWindow isOpen={isOpen} onClose={onClose} title="Resume" headerColor="#FFF7F0">
