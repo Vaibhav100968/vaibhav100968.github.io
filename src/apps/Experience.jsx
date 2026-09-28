@@ -6,7 +6,7 @@ const experiences = [
     id: 1,
     role: 'Software Engineering Intern',
     company: 'Soularis',
-    type: 'May 2026 – Present · Austin, TX',
+    type: 'Austin, TX',
     logoGradient: 'linear-gradient(135deg, #1a1a1a, #333)',
     details: [
       'Built a pgvector search service (HNSW-indexed) with sub-second semantic queries, lifting retrieval relevance 70%+.',
@@ -18,7 +18,7 @@ const experiences = [
     id: 2,
     role: 'Research Fellow',
     company: 'UNT Mixed Realities Lab',
-    type: 'Nov. 2024 – Present · Denton, TX',
+    type: 'Denton, TX',
     logoGradient: 'linear-gradient(135deg, #1a1a1a, #333)',
     details: [
       'Built a real-time streaming service over MQTT + WebSockets, delivering sensor data to clients at 512ms latency.',
@@ -30,7 +30,7 @@ const experiences = [
     id: 3,
     role: 'AI Systems Engineering Intern',
     company: 'CORE (YC S23)',
-    type: 'May 2025 – Aug. 2025 · Remote',
+    type: 'Remote',
     logoGradient: 'linear-gradient(135deg, #1a1a1a, #333)',
     details: [
       'Optimized backend APIs and orchestration, raising workflow reliability 30% across distributed multi-service systems.',
