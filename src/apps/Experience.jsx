@@ -42,7 +42,7 @@ const experiences = [
     id: 4,
     role: 'Research Assistant',
     company: 'UNT Smart Electronic Systems Lab (SESL)',
-    type: 'Research · 7 hrs/week',
+    type: 'Research',
     logoGradient: 'linear-gradient(135deg, #222, #444)',
     details: [
       'Built a TinyFL anomaly detection framework for IoMT edge devices, reaching 100% inference accuracy on test data.',
@@ -66,7 +66,7 @@ const experiences = [
     id: 6,
     role: 'Lead Tutor/Manager',
     company: 'Kumon of Coppell East',
-    type: 'Part-time · 6 hrs/week',
+    type: 'Part-time',
     logoGradient: 'linear-gradient(135deg, #444, #666)',
     details: [
       'Led 3+ daily group sessions for 20+ students aged 8–16, teaching math, reading, and grammar across skill levels.',
