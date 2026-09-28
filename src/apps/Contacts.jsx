@@ -45,7 +45,7 @@ export default function Contacts({ isOpen, onClose }) {
             <img
               src={profilePic}
               alt="Vaibhav Gollapalli"
-              style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 95%' }}
+              style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
             />
           </div>
           <h2 style={{ fontSize: '20px', fontWeight: 700, color: '#1a1a1a' }}>Vaibhav Gollapalli</h2>
