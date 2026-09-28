@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 
 function isLightColor(color) {
   if (!color) return false
-  if (color.startsWith('#FFF') || color.startsWith('#FDF') || color.startsWith('#fff') || color.startsWith('#fdf')) return true
+  if (color.startsWith('#FFF') || color.startsWith('#FDF') || color.startsWith('#F2F') || color.startsWith('#fff') || color.startsWith('#fdf')) return true
   return false
 }
 
