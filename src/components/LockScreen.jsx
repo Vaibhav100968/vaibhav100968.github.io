@@ -53,17 +53,7 @@ export default function LockScreen({ onUnlock }) {
             </motion.h1>
           </div>
 
-          {/* Center name */}
-          <div className="flex-1 flex items-center">
-            <motion.p
-              className="text-white/50 text-lg font-light tracking-widest uppercase"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5 }}
-            >
-              Vaibhav Gollapalli
-            </motion.p>
-          </div>
+          <div className="flex-1" />
 
           {/* Bottom */}
           <div className="pb-10 flex flex-col items-center gap-6">
