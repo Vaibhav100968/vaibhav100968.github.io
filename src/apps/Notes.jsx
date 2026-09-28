@@ -147,7 +147,7 @@ export default function Notes({ isOpen, onClose }) {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0, x: -20 }}
-              style={{ padding: '0 16px', flex: 1, display: 'flex', flexDirection: 'column' }}
+              style={{ padding: '22px 16px 0', flex: 1, display: 'flex', flexDirection: 'column' }}
             >
               {/* Top buttons */}
               <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '10px' }}>
@@ -220,7 +220,7 @@ export default function Notes({ isOpen, onClose }) {
               <div style={{
                 position: 'sticky', top: 0, zIndex: 2, background: 'rgba(255,255,255,0.94)',
                 backdropFilter: 'blur(12px)', WebkitBackdropFilter: 'blur(12px)',
-                display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '4px 22px 10px 16px',
+                display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '26px 22px 12px 16px',
               }}>
                 <button
                   type="button"
