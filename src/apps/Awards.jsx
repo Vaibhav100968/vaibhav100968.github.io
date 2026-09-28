@@ -8,10 +8,7 @@ const publications = [
     title: 'StrokeSentry: A Novel Edge AI Mobile Application for Rapid Stroke Detection',
     venue: 'IEEE ICBAIE',
     note: 'Accepted for publication in IEEE Xplore.',
-    buttons: [
-      { label: 'IEEE Xplore', url: 'https://ieeexplore.ieee.org/document/11326575' },
-      { label: 'View Paper PDF', url: `${base}pdfs/strokesentry.pdf` }
-    ],
+    buttons: [{ label: 'View Paper PDF', url: `${base}pdfs/strokesentry.pdf` }],
   },
   {
     title: 'Federated TinyML for Lightweight Anomaly Detection in IoMT Using MQTT',
@@ -26,6 +23,12 @@ const publications = [
     buttons: [{ label: 'View Paper PDF', url: `${base}pdfs/windkessel-abstract.pdf` }],
   },
   {
+    title: 'Modeling Cognitive Energy from EEG Transitions using Schr\u00F6dinger Bridge Problem',
+    venue: 'IEEE SMC',
+    note: 'SBP modeling applied to Stroop task EEG data.',
+    buttons: [{ label: 'View Paper PDF', url: `${base}pdfs/eeg-cognitive-energy.pdf` }],
+  },
+  {
     title: 'Grey Wolf Optimizer',
     venue: '',
     note: 'Open-source nature-inspired optimization algorithm.',
@@ -34,11 +37,6 @@ const publications = [
 ]
 
 const pendingPubs = [
-  {
-    title: 'Modeling Cognitive Energy from EEG Transitions using Schr\u00F6dinger Bridge Problem',
-    note: 'SBP modeling applied to Stroop task EEG data.',
-    buttons: [{ label: 'View Paper PDF', url: `${base}pdfs/eeg-cognitive-energy.pdf` }],
-  },
   {
     title: 'Hybrid Windkessel-Neural BP Monitor',
     note: 'Achieved Grade A BHS accuracy.',
@@ -55,6 +53,7 @@ const achievements = [
       'IEEE iSES Paper Acceptance',
       'ICBES Paper Acceptance',
       'IEEE ICBAIE Paper Acceptance',
+      'IEEE SMC Paper Acceptance',
     ],
   },
   {
