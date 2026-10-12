@@ -5,12 +5,6 @@ import Dock from './Dock'
 
 const appConfigs = [
   {
-    id: 'photos',
-    label: 'Photos',
-    color: 'transparent',
-    icon: <img src={`${import.meta.env.BASE_URL}icons/photos.png`} alt="Photos" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />,
-  },
-  {
     id: 'notes',
     label: 'Notes',
     color: 'transparent',
@@ -52,15 +46,20 @@ const appConfigs = [
     color: 'transparent',
     icon: <img src={`${import.meta.env.BASE_URL}icons/resume.png`} alt="Resume" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />,
   },
+  {
+    id: 'blog',
+    label: 'Blog',
+    color: 'transparent',
+    icon: <img src={`${import.meta.env.BASE_URL}icons/blog.png`} alt="Blog" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />,
+  },
 ]
 
 export default function HomeScreen({ onAppOpen }) {
   return (
     <motion.div
       className="absolute inset-0 wallpaper flex flex-col"
-      initial={{ opacity: 0 }}
+      initial={false}
       animate={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
     >
       <StatusBar />
 

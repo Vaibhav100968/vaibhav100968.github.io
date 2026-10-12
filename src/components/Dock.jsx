@@ -8,10 +8,10 @@ const dockApps = [
     icon: <img src={`${import.meta.env.BASE_URL}icons/linkedin.png`} alt="LinkedIn" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />,
   },
   {
-    id: 'instagram',
-    label: 'Instagram',
-    url: 'https://www.instagram.com/vaibhav.g__',
-    icon: <img src={`${import.meta.env.BASE_URL}icons/instagram.png`} alt="Instagram" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />,
+    id: 'x',
+    label: 'X',
+    url: 'https://x.com/Vaibhav_g08',
+    icon: <img src={`${import.meta.env.BASE_URL}icons/x.png`} alt="X" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />,
   },
   {
     id: 'github',
@@ -32,14 +32,14 @@ export default function Dock({ onAppOpen }) {
       className="absolute bottom-6 left-5 right-5 dock-blur rounded-[28px] px-5 py-3.5 flex justify-around items-center z-30"
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ delay: 0.3, type: 'spring', stiffness: 200, damping: 25 }}
+      transition={{ delay: 0.15, type: 'spring', stiffness: 200, damping: 25 }}
     >
       {dockApps.map((app, index) => {
         const isInternalApp = app.id === 'music' || app.id === 'music-2'
         const Tag = isInternalApp ? motion.button : motion.a
         const props = isInternalApp
           ? { onClick: () => onAppOpen('music') }
-          : { href: app.url, target: "_blank", rel: "noopener noreferrer" }
+          : { href: app.url, target: '_blank', rel: 'noopener noreferrer' }
 
         return (
           <Tag

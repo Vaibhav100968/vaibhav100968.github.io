@@ -22,7 +22,7 @@ const sections = [
     title: 'Socials',
     items: [
       { emoji: '\uD83D\uDCBC', label: 'LinkedIn', value: '@vaibhavgollapalli', url: 'https://www.linkedin.com/in/vaibhavgollapalli' },
-      { emoji: '\uD83D\uDCF8', label: 'Instagram', value: '@vaibhav.g__', url: 'https://www.instagram.com/vaibhav.g__' },
+      { emoji: '\uD83D\uDCAC', label: 'X', value: '@Vaibhav_g08', url: 'https://x.com/Vaibhav_g08' },
       { emoji: '\uD83D\uDCBB', label: 'GitHub', value: '@Vaibhav100968', url: 'https://github.com/Vaibhav100968' },
     ],
   },

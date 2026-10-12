@@ -3,7 +3,6 @@ import './index.css'
 import PhoneFrame from './components/PhoneFrame'
 import LockScreen from './components/LockScreen'
 import HomeScreen from './components/HomeScreen'
-import Photos from './apps/Photos'
 import Notes from './apps/Notes'
 import Contacts from './apps/Contacts'
 import Projects from './apps/Projects'
@@ -12,6 +11,7 @@ import Research from './apps/Research'
 import Awards from './apps/Awards'
 import Music from './apps/Music'
 import Resume from './apps/Resume'
+import Blog from './apps/Blog'
 
 function App() {
   const [isLocked, setIsLocked] = useState(true)
@@ -23,14 +23,11 @@ function App() {
 
   return (
     <PhoneFrame>
-      {/* Lock Screen */}
+      {/* Home sits under the lock screen so unlock can slide up like a real iPhone */}
+      <HomeScreen onAppOpen={handleAppOpen} />
+
       {isLocked && <LockScreen onUnlock={handleUnlock} />}
 
-      {/* Home Screen */}
-      {!isLocked && <HomeScreen onAppOpen={handleAppOpen} />}
-
-      {/* Apps */}
-      <Photos isOpen={openApp === 'photos'} onClose={handleAppClose} />
       <Notes isOpen={openApp === 'notes'} onClose={handleAppClose} />
       <Contacts isOpen={openApp === 'contacts'} onClose={handleAppClose} />
       <Projects isOpen={openApp === 'projects'} onClose={handleAppClose} />
@@ -39,6 +36,7 @@ function App() {
       <Awards isOpen={openApp === 'awards'} onClose={handleAppClose} />
       <Music isOpen={openApp === 'music'} onClose={handleAppClose} />
       <Resume isOpen={openApp === 'resume'} onClose={handleAppClose} />
+      <Blog isOpen={openApp === 'blog'} onClose={handleAppClose} />
     </PhoneFrame>
   )
 }
