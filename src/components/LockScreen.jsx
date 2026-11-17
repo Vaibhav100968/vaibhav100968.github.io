@@ -40,22 +40,18 @@ export default function LockScreen({ onUnlock }) {
           : { type: 'spring', stiffness: 420, damping: 38 }
       }
     >
-      {/* Top notch area */}
-      <div className="pt-16 flex flex-col items-center">
-        <motion.svg
-          width="16" height="20" viewBox="0 0 16 20" fill="none" className="mb-3 opacity-60"
-          animate={{ opacity: [0.4, 0.7, 0.4] }}
-          transition={{ duration: 3, repeat: Infinity }}
+      {/* Date and clock sit below the black Dynamic Island */}
+      <div className="flex flex-col items-center" style={{ paddingTop: '92px' }}>
+        <p
+          className="text-white/80 text-sm font-medium tracking-wide"
+          style={{ textShadow: '0 1px 8px rgba(0,0,0,0.35)' }}
         >
-          <rect x="1" y="8" width="14" height="11" rx="3" stroke="white" strokeWidth="1.5" />
-          <path d="M4.5 8V5.5a3.5 3.5 0 017 0V8" stroke="white" strokeWidth="1.5" strokeLinecap="round" />
-        </motion.svg>
-
-        <p className="text-white/70 text-sm font-medium tracking-wide">{dateStr}</p>
+          {dateStr}
+        </p>
 
         <motion.h1
           className="text-white text-8xl font-thin tracking-tight leading-none mt-1"
-          style={{ fontWeight: 200 }}
+          style={{ fontWeight: 200, textShadow: '0 2px 16px rgba(0,0,0,0.28)' }}
           animate={{ opacity: [0.9, 1, 0.9] }}
           transition={{ duration: 4, repeat: Infinity }}
         >
