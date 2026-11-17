@@ -20,7 +20,7 @@ export default function AppIcon({ icon, label, color, onClick, delay = 0 }) {
       >
         {icon}
       </div>
-      <span className="text-white text-[11px] font-medium drop-shadow-sm leading-tight text-center">
+      <span className="text-white text-[11px] font-medium leading-tight text-center" style={{ textShadow: '0 1px 3px rgba(0,0,0,0.6), 0 0 8px rgba(0,0,0,0.35)' }}>
         {label}
       </span>
     </motion.button>
