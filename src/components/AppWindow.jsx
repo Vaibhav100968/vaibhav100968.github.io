@@ -6,7 +6,7 @@ function isLightColor(color) {
   return false
 }
 
-export default function AppWindow({ isOpen, onClose, title, children, headerColor = 'rgba(0,0,0,0.85)' }) {
+export default function AppWindow({ isOpen, onClose, title, children, headerColor = 'rgba(0,0,0,0.85)', hideHeader = false }) {
   const light = isLightColor(headerColor)
   const textColor = light ? '#1a1a1a' : 'white'
   const footerBg = light ? headerColor : headerColor
@@ -25,15 +25,15 @@ export default function AppWindow({ isOpen, onClose, title, children, headerColo
           transition={{ type: 'spring', stiffness: 300, damping: 30 }}
           style={{ overflow: 'hidden' }}
         >
-          {/* App header */}
-          <div
+          {/* App header (apps with their own full-bleed top pass hideHeader) */}
+          {!hideHeader && <div
             className="flex items-center justify-center px-5 pt-14 pb-3 shrink-0 relative"
             style={{ background: headerColor }}
           >
             <span style={{ color: textColor, fontWeight: 600, fontSize: '16px' }}>
               {title}
             </span>
-          </div>
+          </div>}
 
           {/* App content */}
           <div
