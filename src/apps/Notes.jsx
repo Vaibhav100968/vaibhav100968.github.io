@@ -31,6 +31,13 @@ const notes = [
     pinned: false,
     date: 'March 9, 2026',
   },
+  {
+    id: 5,
+    title: 'Technical Skills',
+    content: "Languages: Java, Python, C++, C#, TypeScript, JavaScript, Swift, SQL, HTML, CSS\n\nFrameworks: React, React Native, Node.js, Express, FastAPI, SwiftUI\n\nTools & Platforms: Git, Docker, AWS, GitHub Actions, JIRA, Postman, PostgreSQL, Railway, Supabase\n\nPractices & Testing: CI/CD, Agile, Unit Testing, REST APIs, Pytest, Playwright\n\nAI & ML: PyTorch, TensorFlow, Core ML, scikit-learn, LLMs, RAG, MCP, LangChain, vector search, agentic AI, prompting",
+    pinned: false,
+    date: 'November 17, 2026',
+  },
 ]
 
 const ACCENT = '#E0A800'
